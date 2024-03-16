@@ -5,55 +5,6 @@ import WeatherReport from './Component/WeatherReport/WeatherReport';
 import { weather_Api_Key, weather_Api_Url } from './Component/apiFolder';
 import { useState } from 'react';
 
-// function App() {
-
-//   const [weatherData,setWeatherData] = useState(null)
-//   const [isCelsius, setIsCelsius] = useState(true); // State for temperature unit
-
-
-  
-
-//   const handleSearchData =(searchData)=>{
-//     const [lat, lon] = searchData.value.split(" ");
-//     const weatherFetchingApi = fetch(`${weather_Api_Url}/weather?lat=${lat}&lon=${lon}&appid=${weather_Api_Key}&units=metric`)
-  
-  
-//     Promise.all([weatherFetchingApi])
-//     .then(async (response) => {
-//       const weatherResponse = await response[0].json();
-
-//       setWeatherData({ city: searchData.label, ...weatherResponse });
-//     })
-//     .catch(console.log);
-
-//   }
-
-//   console.log(weatherData,'CheckForcast')
-
-//   const toggleTemperatureUnit = () => {
-//     setIsCelsius(!isCelsius);
-//   };
-
-
-
-//   return (
-//     <div className="weather-app-container">
-//     <Search onSearchChangeData={handleSearchData}/>
-//      { weatherData && 
-//      <>
-//      <WeatherReport dataFetched={weatherData} isCelsius={isCelsius}/>
-
-//      <button onClick={toggleTemperatureUnit}>
-//      {isCelsius ? 'Show in Fahrenheit' : 'Show in Celsius'}
-//    </button>
-//    </>
-//      }
- 
-//     </div>
-//   );
-// }
-
-// export default App;
 function App() {
 
   const [weatherData,setWeatherData] = useState(null)
